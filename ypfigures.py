@@ -1,4 +1,3 @@
-from bokeh.sampledata.gapminder import population, fertility, life_expectancy
 from bokeh.models import Button, Slider
 from bokeh.plotting import figure, column, row
 from bokeh.io import curdoc
