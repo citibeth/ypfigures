@@ -104,8 +104,8 @@ def main():
     ax.set_aspect('equal')
     
 #    X0 = (0., 0.2, 0., 0., 1.)
-    X0 = (0., 1.5, 0., 0., 1)
-    for ix in range(8):
+    X0 = (0., 1.27, 0., 0., 1)
+    for ix in range(6):
         theta,thetadot,x,y,speed = clothoid(X0, rate_wheel_turn=1, rate_accel=-.15*X0[-1])
         plt.plot(x,y)
         X0 = (theta[-1], thetadot[-1], x[-1], y[-1], speed[-1])
